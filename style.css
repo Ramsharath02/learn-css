@@ -1,0 +1,51 @@
+/* p is a selector  */
+/* p.css{
+    color: blue; 
+    }  /* color; is property , blue; is property value, property and property value is called Decleration */
+   
+
+/* complete structure called RULED SET */
+/* css is work like a water fall, 
+its executes from top to bottom,
+when u given p{color:blue } then p{color:red}
+it works red only, 
+(this is cascading, means line by line monitered and last one wins. )*/
+
+/* group selector */
+h2,h4{
+    font-style: oblique;
+}
+
+/* element selector */
+body{
+font-size: 20px;
+}
+
+p{
+    color: black;
+}
+
+/* class selector, is the best method to use in css */
+.gray{
+    color: chartreuse;
+    font-style: italic;
+}
+
+/* id selector */
+#sec{
+    color: blue;
+}
+
+/* universel selector, generally it is not used */
+*/*{
+    font-family: monospace;
+} */
+
+
+.highlight{
+    background-color: lightpink;
+}
+
+p span{
+    background-color: yellow;
+}
