@@ -1,3 +1,8 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap'); */
+
+              /* CHAPTER 2 SELECTORS */
+
+
 /* p is a selector  */
 /* p.css{
     color: blue; 
@@ -11,41 +16,522 @@ when u given p{color:blue } then p{color:red}
 it works red only, 
 (this is cascading, means line by line monitered and last one wins. )*/
 
-/* group selector */
-h2,h4{
-    font-style: oblique;
-}
+/* group selector: Use to apply the same styles to multiple elements at once. */
+/* h2,h4{
+        font-style: oblique;
+    } */
 
-/* element selector */
-body{
-font-size: 20px;
-}
+/* element selector:Use for global styles on specific types of elements (e.g., all paragraph */
+ 
 
-p{
-    color: black;
-}
+          /* CHAPTER - 3 COLORS */
 
-/* class selector, is the best method to use in css */
-.gray{
-    color: chartreuse;
-    font-style: italic;
-}
+/*body {
+         font-size: 20px;                /* Sets the font size to 20px for the entire body */
+         /*font-family: Arial, Helvetica, sans-serif; /* Defines the font family, with fallback options */
+         /*background-color: whitesmoke;   /* Sets the background color of the body to a light gray */
+         /*color: rgb(255,0,0);    }          /* Sets the text color to red using RGB values */
+    
 
-/* id selector */
-#sec{
-    color: blue;
-}
+     /* p {
+        color: rgba(0, 0, 255, 1);  
+        }                                /* Sets the text color of all <p> elements to blue (RGBA color format with full opacity and A is transparency.) */
+    
+     
+    
+    /* Normal Color Palette in Hexadecimal */
+/* color: #FF0000;  Red */
+/* color: #008000;  Green */
+/* color: #0000FF;  Blue */
+/* color: #FFFF00;  Yellow */
+/* color: #000000;  Black */
+/* color: #FFFFFF;  White */
+/* color: #808080;  Gray */
+/* color: #800080;  Purple */
+/* color: #FFA500;  Orange */
+/* color: #A52A2A;  Brown */
+
+       /* Normal Color Palette in HSL (Hue, Saturation, Lightness)*/
+ /* color: hsl(0, 100%, 50%);  Red */
+ /* color: hsl(120, 100%, 25%);  Green */
+ /* color: hsl(240, 100%, 50%);  Blue */
+ /* color: hsl(60, 100%, 50%);  Yellow */
+ /* color: hsl(0, 0%, 0%);  Black */
+ /* color: hsl(0, 0%, 100%);  White */
+ /* color: hsl(0, 0%, 50%);  Gray */
+ /* color: hsl(300, 100%, 25%);  Purple */
+ /* color: hsl(39, 100%, 50%);  Orange */
+ /* color: hsl(0, 59%, 41%);  Brown */
+ 
+  /* Normal Color Palette in HSLA  HSLA (Hue, Saturation, Lightness, Alpha) */
+ /* color: hsla(0, 100%, 50%, 1);  Red */
+ /* color: hsla(120, 100%, 25%, 1);  Green */
+ /* color: hsla(240, 100%, 50%, 1);  Blue */
+
+
+      /*coolors is website to choose different color*/
+
+/* p{
+        color: black;
+     } */
+
+/* class selector: Use for reusable styles across multiple elements. 
+is the best method to use in css */
+/* .gray{
+        color: chartreuse;
+        font-style: italic;
+    } */
+
+/* id selector: Use for targeting unique, specific elements. */
+/* #sec{
+        color: blue;
+} */
 
 /* universel selector, generally it is not used */
-*/*{
+/*{
     font-family: monospace;
 } */
 
 
-.highlight{
-    background-color: lightpink;
-}
+/* .highlight{
+            background-color: lightpink;
+        } */
 
-p span{
-    background-color: yellow;
+/* p span{
+            background-color: yellow;
+} */
+
+           
+
+          /* CHAPTER - 4 UNITS & SIZES */
+
+
+    /* *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+               } */
+    /*h1{
+       border: 4px dashed red; /* border is static not responsive*/
+     /*  width: 50%;
+      font-size: 3rem; /* 3 × 16px = 48px */
+      /*padding: 0.5em;}  /* 0.5 times the parent font-size 0.5em = 10px (0.5 × 20px).*/
+/*     
+    body{
+        min-height: 100vh; }Using min-height: 100vh; /*ensures that the body always fills the full screen, but it also allows the page to grow if the content is longer.*/
+     
+        /* width: 100vw; by using vw has down side scroll bar is given. */
+    
+   /* main{
+    background-color: green;
+    font-size: 2rem;
+
+                    } */
+
+  /* p{ 
+   
+      font-size: 2rem; } */
+      /* width: 30ch; is used for 30 character only on paragraph*/
+  
+  /*use px for box → extract spacing eg; margin , padding.*/
+  /* use rem for text → Ensures text scales consistently.*/
+/* use% for width → Makes elements adjust to their parent.*/
+/*use vw & vh → for fullscreen elements → Fits the entire screen.*/
+/*Use fr for Grid layouts → Creates flexible columns.*/
+
+
+
+                /* CHAPTER - 5 CSS BOX MODEL */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} */
+
+/* .container{
+    border: 11px double red;
+    font-size: 1.5rem;     /* font-size 3rem = 48px ,padding 0.5em is taken in 3rem half is padding, 48px half is 24px is padding  */
+    /* margin: 1.5em;
+    padding: 1.5em; */ 
+    /* margin-top: 1.5em;
+    margin-right: 2em;
+    margin-left: 4em;
+    margin-bottom: 3em; } */
+    /* outline: 5px solid blue;  → Creates a blue outline around the element, outside the border. */
+    /* outline-offset: -20px;  → Moves the outline 10px away from the element's edge.   */
+    /* outline-offset: 10px;  → Moves the outline 20px inside towards the element. */
+       
+
+        /* .circle{
+            margin: 2em auto;
+            border: 10px solid green;
+            border-radius: 50%;
+            background-color: chartreuse;
+            width: 100px;
+            height: 100px;
+            outline: 5px dashed black;
+            outline-offset: 10px;
+        } */
+
+        /* .circle{
+            margin: 3em auto;
+            border: 6px solid red;
+            border-radius: 50%;
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            outline: 4px dashed green;
+            outline-offset: 6px;
+
+        } */
+
+                 /*CHAPTER - 6 TYPOGRAPHY */
+/*Typography is the way that text is arranged and presented. */
+
+        /* body{
+            padding: 10%;
+            font-size: 1.5rem;
+            
+        } */
+          /* input, button{
+            font-size: inherit;
+          } */
+          
+         /* Other Text Styling Elements in CSS
+These properties help control the appearance of text.
+
+✅ text-align → Aligns text (left, center, right, justify).
+✅ text-transform → Changes text case (uppercase, lowercase, capitalize).
+✅ letter-spacing → Adjusts space between letters.
+✅ word-spacing → Controls spacing between words.
+✅ line-height → Adjusts space between lines.
+✅ text-indent → Adds space at the start of a paragraph.
+✅ white-space → Controls how text handles spaces and line breaks.
+✅ direction → Sets text direction (ltr or rtl).
+✅ unicode-bidi → Controls text rendering for languages like Arabic or Hebrew. */
+           
+/*text-decoration: none;  /* Removes underline from links */
+/*text-decoration: overline;  /* Adds a line above the text */
+/*text-decoration: none;   /*Removes underline from links */
+/*text-decoration: line-through; /* Strikes through the text */
+        
+ /* line-height:1.5 ;  Increase readability by adjusting the space between lines of text. */
+ /*letter-spacing → Adjusts the space between individual letters in a text.
+    word-spacing → Adjusts the space between words in a text. */
+    /* font-weight → controls the thickness or boldness of text. */
+    /*font-family → Defines the typeface (e.g., Arial, Times New Roman).
+      font-size → Controls the text size (e.g., 16px, 1.2rem).
+     font-weight → Adjusts the boldness (normal, bold, 100-900).
+     font-style → Sets text as normal, italic, or oblique. */
+
+
+                /* p{
+                     line-height: 1.4;
+                    font-weight: 10;
+                    font-family: "Sigmar", serif;
+                    } */
+
+            
+            
+            
+                    /* CHAPTER - 7 CSS - STYLING LINKS                 */
+
+     
+     /*PSEUDO CLASSES USED : ONE COLON*/
+
+    /* a{ text-decoration: none; /* Removes the underline from links */
+        /*cursor: pointer; /* Changes the cursor to a pointer (hand) */
+       /* color: rgb(175, 46, 57);} /* Default color for links */
+      
+    /* a:visited{                   /* a:visited → Changes the style of a visited link */
+     /*   color: green;
+     }
+    a:hover,:focus{                        /*we can use → color: rgba(175, 46, 57,0.5); or opacity:0.5 to transparent text */
+     /*   color: rgba(175, 46, 57,0.5);  }           /*  a:hover → Applies styles when the user hovers over an element */
+                                /* Changes link color when mouse hovers over it */
+    
+     /* a:active{                       /* a :active → Applies styles when an element is clicked */
+       /* color:blue ; 
+     }                                /* Changes link color when clicked */
+
+
+                     /* CHAPTER - 8 LIST STYLES */
+
+                     /* body{
+                        padding: 10%;
+                        font-size: 1rem;
+                     } */
+
+                     /* ol{
+                        list-style-type: upper-roman;
+                     }
+                      */
+                     /* ol li:nth-child(3){
+                        color: blueviolet;
+                     } */
+
+                     /* ul{
+                        list-style-type: square;
+                        text-align: center;
+                        list-style-position: inside;
+                        list-style-image: url(img/tick.png);
+                        list-style: square url(img/tick.png) inside;
+                        
+                     } */
+                     
+                     /* ul li:nth-child(2){
+                        color: chocolate;
+                     }
+               */
+                     /*PSEUDO ELEMENTS ARE USING ::marker DOUBLE COLON*/
+                     
+                     /*we can use in ol li::marker{ } element*/
+                     /* ::marker{
+                            color: red;
+                            font-size: 2em;
+                              
+                        }
+                         */ /* ul: reg no:24052250500112097  24bca97 */
+
+                    /* *  {
+                          margin: 0;
+                          padding: 0;
+                          box-sizing: border-box;
+                                 }           
+  
+                     body{
+                          margin: 2em;
+                          font-family: 'Courier New', Courier, monospace;
+                          text-align: center;
+                         }
+  
+                     nav{
+                          border: 2px solid red;
+                          border-radius: 1rem;
+                          margin: 0 auto 1rem;
+                          max-width: 600px;
+                          font-size: 3rem;
+                          line-height: 5rem;
+
+                         }
+                    h2{
+                       padding: 1rem;
+                       background-color: burlywood; 
+                       border-radius: 1rem 1rem 0 0;
+    
+                    }    
+                    
+                    ul{ 
+                        list-style-type: none;
+                    }
+
+                    li{
+                        border-top: 1px solid;
+                        text-decoration: none;
+                    }
+
+                    li a,
+                    li a:visited{
+                        text-decoration: none;
+                        color: #333;
+                    }
+
+                    li a:hover,
+                    li a:focus{
+                         background: #333;
+                         color: whitesmoke;
+                    }
+                    li a{
+                        display: block;                       
+                    }
+                    li:nth-last-child(1) a {
+                        border-radius: 0 0 1rem 1rem;
+                    }
+                           */
+
+                           /*<nav>
+       <header class="container">
+        
+            <h1>Happy Learning</h1>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+        </ul>
+       </header>
+    </nav> */
+
+/* nav{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+
 }
+.container{
+    border-radius: 2rem;
+    border: 2px solid red;
+    margin: 0 auto 1rem;
+    max-width: 500px;
+    line-height: 3rem;
+    font-size: 2rem;
+    overflow: hidden;
+
+}
+h1{
+    padding: 2rem;
+    background-color: burlywood; 
+    border-radius: 2rem 2rem 0 0;
+    margin: 0;
+    
+ }               
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}               
+li{
+    border-top:1px solid;
+    padding: 0.1em;
+    text-align: center;
+    width: 100%;
+}
+li:hover,
+li:focus{
+    background-color: crimson;
+} */
+
+           /*CHAPTER - 10 CSS-DISPLAY*/
+
+
+        /* body{
+            font-size: 1.5rem;
+         }  
+            p{
+             background-color: gray;
+             
+          }
+
+          .opposite{
+            display: inline-block;
+            background-color: red;
+            color:whitesmoke;
+            padding: 3rem;
+            
+        } */
+           
+        /*
+        <ol>
+                <li><b><a href="https://validator.w3.org/nu/#file">Content</a></li>
+                <li><b><a href="https://validator.w3.org/nu/#file">Padding</a></li>
+                <li><b><a href="https://validator.w3.org/nu/#file">Border</a></li>
+                <li><b><a href="https://validator.w3.org/nu/#file">Margin</a></li>
+            </ol> 
+        
+        
+        ol{
+            list-style-type: none;
+            padding: 1rem;
+            margin: 0;
+            background-color: orangered;
+            text-align: center;
+
+        }
+        li{
+            display: inline-block;
+            margin-inline: 1rem;
+            
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+
+        li a:hover , li a:focus{
+            text-decoration: underline;
+            text-decoration-color:whitesmoke;
+        } */
+         
+
+
+          /*CHAPTER - 11 CSS - FLOATS*/
+
+/* 
+        <section>
+          <div class="block left">CSS Float</div>
+          <p>Lorem ipsum dolor sit amet Odio saepe reiciendis labore error? Aut iure perspiciatis repellat dolorem aspernatur, quas autem aliquid ipsam qui doloremque officiis, iste earum quia numquam fugiat. Vitae fugiat facere est odio, iure magni consectetur, adipisicing elit. Tempora nobis voluptatem, omnis ducimus deserunt officiis doloremque a repellendus cumque sapiente perspiciatis hic explicabo inventore earum ad autem tempore obcaecati iste.</p>
+        </section>
+         
+          <p>Odio saepe reiciendis labore error? Aut iure perspiciatis repellat dolorem aspernatur, quas autem aliquid ipsam qui doloremque officiis, iste earum quia numquam fugiat. Vitae fugiat facere est odio, iure magni.</p>
+          <p>Aspernatur corporis odio ex, impedit nemo totam ad, quidem aperiam neque rerum, dolor qui possimus consequatur a ratione numquam enim amet autem explicabo hic! Neque optio officiis eius labore a?</p>
+          <div class="block right">Float</div>
+          <p>Nisi sed sequi laborum ipsam ab cupiditate rem vitae facilis consequatur explicabo! Minus hic iure molestiae, numquam distinctio quam illo dolor ipsam, eveniet ad id qui mollitia aut nostrum libero.</p>
+          <p>Dicta corporis doloribus magnam labore ab modi optio, omnis voluptas at animi odio voluptates recusandae inventore, unde expedita exercitationem molestiae dolor, quidem perferendis voluptatum amet nobis. Doloribus aliquam quis earum!</p>
+    
+        body{
+            font: size 1.75rem; 
+        }  
+        
+        .block{
+            background-color: black;
+            width:30vw;
+            color: azure;
+            height: 20vw;
+            padding: 1rem;
+        }
+        .left{
+            float: left;
+            margin-right: 30px;
+        }
+        .right{
+            float: right;
+            margin-left: 20px;
+        }
+        .clear{
+            clear: both;
+        }
+        section{
+            background-color: bisque;
+            border: 1px solid grey;
+            padding: 1rem;
+            display: flow-root;
+        } */
+        
+
+        /*CHAPTER - 12 COLUMNS*/
+
+
+        body{
+            font-size: 1.5rem;
+        }
+        .column{
+            /* column-count: 4;
+            column-width: 200px; */
+            columns: 4 250px;
+            column-rule: 3px solid blue;
+            column-gap: 3rem;
+
+        }
+        .column p{
+            margin-top: 0;
+            
+        }
+        h2{
+            margin: 0;
+            background-color: black;
+            color: whitesmoke;
+            padding: 3rem;
+            break-inside: avoid;
+           
+        }
+
+        .quote {
+            color: red;
+            text-align: center;
+            font-size: 3rem;
+            column-span: all;
+        }
+        .nowrap{
+            white-space: nowrap;
+        }
