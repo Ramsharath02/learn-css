@@ -1,0 +1,37 @@
+   /* CHAPTER - 3 UNITS & SIZES */
+
+
+    *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+               } 
+    h1{
+       border: 4px dashed red; /* border is static not responsive*/
+      width: 50%;
+      font-size: 3rem; /* 3 × 16px = 48px */
+      padding: 0.5em;}  /* 0.5 times the parent font-size 0.5em = 10px (0.5 × 20px).*/
+/*     
+    body{
+        min-height: 100vh; }Using min-height: 100vh; /*ensures that the body always fills the full screen, but it also allows the page to grow if the content is longer.*/
+     
+        /* width: 100vw; by using vw has down side scroll bar is given. */
+    
+  main{
+    background-color: green;
+    font-size: 2rem;
+
+                    } 
+
+   p{ 
+   
+      font-size: 2rem;
+      width: 30ch;
+    } 
+      /* width: 30ch; is used for 30 character only on paragraph*/
+  
+  /*use px for box → extract spacing eg; margin , padding.*/
+  /* use rem for text → Ensures text scales consistently.*/
+/* use% for width → Makes elements adjust to their parent.*/
+/*use vw & vh → for fullscreen elements → Fits the entire screen.*/
+/*Use fr for Grid layouts → Creates flexible columns.*/

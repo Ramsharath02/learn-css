@@ -1,0 +1,78 @@
+  /* CHAPTER - 2 COLORS */
+
+body {
+         font-size: 20px;                /* Sets the font size to 20px for the entire body */
+         font-family: Arial, Helvetica, sans-serif; /* Defines the font family, with fallback options */
+         background-color: whitesmoke;   /* Sets the background color of the body to a light gray */
+         color: rgb(255,0,0);    }          /* Sets the text color to red using RGB values */
+    
+
+      p {
+        color: rgba(0, 0, 255, 1);  
+        }                                /* Sets the text color of all <p> elements to blue (RGBA color format with full opacity and A is transparency.) */
+    
+     
+    
+    /* Normal Color Palette in Hexadecimal */
+/* color: #FF0000;  Red */
+/* color: #008000;  Green */
+/* color: #0000FF;  Blue */
+/* color: #FFFF00;  Yellow */
+/* color: #000000;  Black */
+/* color: #FFFFFF;  White */
+/* color: #808080;  Gray */
+/* color: #800080;  Purple */
+/* color: #FFA500;  Orange */
+/* color: #A52A2A;  Brown */
+
+       /* Normal Color Palette in HSL (Hue, Saturation, Lightness)*/
+ /* color: hsl(0, 100%, 50%);  Red */
+ /* color: hsl(120, 100%, 25%);  Green */
+ /* color: hsl(240, 100%, 50%);  Blue */
+ /* color: hsl(60, 100%, 50%);  Yellow */
+ /* color: hsl(0, 0%, 0%);  Black */
+ /* color: hsl(0, 0%, 100%);  White */
+ /* color: hsl(0, 0%, 50%);  Gray */
+ /* color: hsl(300, 100%, 25%);  Purple */
+ /* color: hsl(39, 100%, 50%);  Orange */
+ /* color: hsl(0, 59%, 41%);  Brown */
+ 
+  /* Normal Color Palette in HSLA  HSLA (Hue, Saturation, Lightness, Alpha) */
+ /* color: hsla(0, 100%, 50%, 1);  Red */
+ /* color: hsla(120, 100%, 25%, 1);  Green */
+ /* color: hsla(240, 100%, 50%, 1);  Blue */
+
+
+      /*coolors is website to choose different color*/
+
+ p{
+        color: black;
+     } 
+
+/* class selector: Use for reusable styles across multiple elements. 
+is the best method to use in css */
+ .gray{
+        color: chartreuse;
+        font-style: italic;
+    } 
+
+/* id selector: Use for targeting unique, specific elements. */
+#sec{
+        color: blue;
+} 
+
+/* universel selector, generally it is not used */
+{
+    font-family: monospace;
+} 
+
+
+ .highlight{
+            background-color: lightpink;
+        } 
+
+ p span{
+            background-color: yellow;
+}
+
+           

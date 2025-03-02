@@ -1,0 +1,41 @@
+
+
+nav{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    
+    }
+    .container{
+    border-radius: 2rem;
+    border: 2px solid red;
+    margin: 0 auto 1rem;
+    max-width: 500px;
+    line-height: 3rem;
+    font-size: 2rem;
+    overflow: hidden;
+    
+    }
+    h1{
+    padding: 2rem;
+    background-color: burlywood; 
+    border-radius: 2rem 2rem 0 0;
+    margin: 0;
+    
+    }               
+    ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    }               
+    li{
+    border-top:1px solid;
+    padding: 0.1em;
+    text-align: center;
+    width: 100%;
+    }
+    li:hover,
+    li:focus{
+    background-color: crimson;
+    }

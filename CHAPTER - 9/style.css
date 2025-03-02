@@ -1,0 +1,35 @@
+
+          /*CHAPTER - 10 CSS - FLOATS*/
+
+
+      
+    
+        body{
+            font: size 1.75rem; 
+        }  
+        
+        .block{
+            background-color: black;
+            width:30vw;
+            color: azure;
+            height: 20vw;
+            padding: 1rem;
+        }
+        .left{
+            float: left;
+            margin-right: 30px;
+        }
+        .right{
+            float: right;
+            margin-left: 20px;
+        }
+        .clear{
+            clear: both;
+        }
+        section{
+            background-color: bisque;
+            border: 1px solid grey;
+            padding: 1rem;
+            display: flow-root;
+        } 
+        

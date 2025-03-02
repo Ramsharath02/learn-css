@@ -1,0 +1,36 @@
+ /*CHAPTER - 10 COLUMNS*/
+
+
+ body{
+    font-size: 1.5rem;
+}
+.column{
+    /* column-count: 4;
+    column-width: 200px; */
+    columns: 4 250px;
+    column-rule: 3px solid blue;
+    column-gap: 3rem;
+
+}
+.column p{
+    margin-top: 0;
+    
+}
+h2{
+    margin: 0;
+    background-color: black;
+    color: whitesmoke;
+    padding: 3rem;
+    break-inside: avoid;
+   
+}
+
+.quote {
+    color: red;
+    text-align: center;
+    font-size: 3rem;
+    column-span: all;
+}
+.nowrap{
+    white-space: nowrap;
+}

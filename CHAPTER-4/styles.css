@@ -1,0 +1,45 @@
+
+                /* CHAPTER - 4 CSS BOX MODEL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+} 
+
+ .container{
+    border: 11px double red;
+    font-size: 1.5rem;     /* font-size 3rem = 48px ,padding 0.5em is taken in 3rem half is padding, 48px half is 24px is padding  */
+     margin: 1.5em;
+    padding: 1.5em; 
+    margin-top: 1.5em;
+    margin-right: 2em;
+    margin-left: 4em;
+    margin-bottom: 3em; } 
+    /* outline: 5px solid blue;  → Creates a blue outline around the element, outside the border. */
+    /* outline-offset: -20px;  → Moves the outline 10px away from the element's edge.   */
+    /* outline-offset: 10px;  → Moves the outline 20px inside towards the element. */
+       
+
+       .circle{
+            margin: 2em auto;
+            border: 10px solid green;
+            border-radius: 50%;
+            background-color: chartreuse;
+            width: 100px;
+            height: 100px;
+            outline: 5px dashed black;
+            outline-offset: 10px;
+        } 
+
+       .circle{
+            margin: 3em auto;
+            border: 6px solid red;
+            border-radius: 50%;
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            outline: 4px dashed green;
+            outline-offset: 6px;
+
+        } 

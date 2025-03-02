@@ -1,0 +1,25 @@
+/* CHAPTER 1 SELECTORS */
+
+/* Universal selector to reset margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Type selector targeting all paragraph elements */
+p {
+    color: blue;
+    /* 'color' is the property, 'blue' is the property value. Together, they form a declaration. */
+}
+
+/* Group selector applying the same style to multiple elements */
+h2, h4 {
+    font-style: oblique;
+}
+
+/* Note:
+   - The complete structure (selector and declarations) is called a rule set.
+   - CSS follows a cascading order, executing from top to bottom.
+   - If multiple rules apply to the same element, the last one in the code takes precedence (cascading effect).
+*/

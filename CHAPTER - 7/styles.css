@@ -1,0 +1,94 @@
+  /* CHAPTER - 7 LIST STYLES */
+
+                     body{
+                        padding: 10%;
+                        font-size: 1rem;
+                     } 
+
+                      ol{
+                        list-style-type: upper-roman;
+                     }
+                      
+                      ol li:nth-child(3){
+                        color: blueviolet;
+                     } 
+
+                      ul{
+                        list-style-type: square;
+                        text-align: center;
+                        list-style-position: inside;
+                        list-style-image: url(img/tick.png);
+                        list-style: square url(img/tick.png) inside;
+                        
+                     } 
+                     
+                      ul li:nth-child(2){
+                        color: chocolate;
+                     }
+               
+                     /*PSEUDO ELEMENTS ARE USING ::marker DOUBLE COLON*/
+                     
+                     /*we can use in ol li::marker{ } element*/
+                      ::marker{
+                            color: red;
+                            font-size: 2em;
+                              
+                        }
+                          /* ul: reg no:24052250500112097  24bca97 */
+
+                      *{
+                          margin: 0;
+                          padding: 0;
+                          box-sizing: border-box;
+                                 }           
+  
+                     body{
+                          margin: 2em;
+                          font-family: 'Courier New', Courier, monospace;
+                          text-align: center;
+                         }
+  
+                     nav{
+                          border: 2px solid red;
+                          border-radius: 1rem;
+                          margin: 0 auto 1rem;
+                          max-width: 600px;
+                          font-size: 2rem;
+                          line-height: 4rem;
+
+                         }
+                    h2{
+                       padding: 1.5rem;
+                       background-color: burlywood; 
+                       border-radius: 1rem 1rem 0 0;
+                       font-size: 2rem;
+    
+                    }    
+                    
+                    ul{ 
+                        list-style-type: none;
+                    }
+
+                    li{
+                        border-top: 2px solid;
+                        display: block;
+                        text-decoration: none;
+                    }
+
+                    li a,
+                    li a:visited{
+                        text-decoration: none;
+                        color: #333;
+                    }
+
+                    li a:hover,
+                    li a:focus{
+                         background: #333;
+                         color: whitesmoke;
+                    }
+                    li a{
+                        display: block;                       
+                    }
+                    li:nth-last-child(1) a {
+                        border-radius: 0 0 1rem 1rem;
+                    }

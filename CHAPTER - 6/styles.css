@@ -1,0 +1,23 @@
+
+                    /* CHAPTER - 6 CSS - STYLING LINKS                 */
+
+     
+     /*PSEUDO CLASSES USED : ONE COLON*/
+
+     a{ text-decoration: none; /* Removes the underline from links */
+       cursor: pointer; /* Changes the cursor to a pointer (hand) */
+        color: rgb(175, 46, 57);} /* Default color for links */
+      
+   a:visited{                   /* a:visited → Changes the style of a visited link */
+       color: green;
+     }
+    a:hover,:focus{                        /*we can use → color: rgba(175, 46, 57,0.5); or opacity:0.5 to transparent text */
+       color: rgba(175, 46, 57,0.5);  }           /*  a:hover → Applies styles when the user hovers over an element */
+                                /* Changes link color when mouse hovers over it */
+    
+     a:active{                       /* a :active → Applies styles when an element is clicked */
+       color:blue ; 
+     }                                /* Changes link color when clicked */
+
+
+             

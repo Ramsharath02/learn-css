@@ -1,0 +1,45 @@
+  /*CHAPTER - 5 TYPOGRAPHY */
+/*Typography is the way that text is arranged and presented. */
+
+         body{
+            padding: 10%;
+            font-size: 1.5rem;
+            
+        } 
+           input, button{
+            font-size: inherit;
+          } 
+          
+         /* Other Text Styling Elements in CSS
+These properties help control the appearance of text.
+
+✅ text-align → Aligns text (left, center, right, justify).
+✅ text-transform → Changes text case (uppercase, lowercase, capitalize).
+✅ letter-spacing → Adjusts space between letters.
+✅ word-spacing → Controls spacing between words.
+✅ line-height → Adjusts space between lines.
+✅ text-indent → Adds space at the start of a paragraph.
+✅ white-space → Controls how text handles spaces and line breaks.
+✅ direction → Sets text direction (ltr or rtl).
+✅ unicode-bidi → Controls text rendering for languages like Arabic or Hebrew. */
+           
+/*text-decoration: none;  /* Removes underline from links */
+/*text-decoration: overline;  /* Adds a line above the text */
+/*text-decoration: none;   /*Removes underline from links */
+/*text-decoration: line-through; /* Strikes through the text */
+        
+ /* line-height:1.5 ;  Increase readability by adjusting the space between lines of text. */
+ /*letter-spacing → Adjusts the space between individual letters in a text.
+    word-spacing → Adjusts the space between words in a text. */
+    /* font-weight → controls the thickness or boldness of text. */
+    /*font-family → Defines the typeface (e.g., Arial, Times New Roman).
+      font-size → Controls the text size (e.g., 16px, 1.2rem).
+     font-weight → Adjusts the boldness (normal, bold, 100-900).
+     font-style → Sets text as normal, italic, or oblique. */
+
+
+                p{
+                     line-height: 1.4;
+                    font-weight: 10;
+                    font-family: "Sigmar", serif;
+                    } 
